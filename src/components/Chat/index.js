@@ -6,9 +6,9 @@ import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import ChatIcon from '@material-ui/icons/Chat';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import MicIcon from '@material-ui/icons/Mic';
-import db from './firebase';
-import firebase from 'firebase';
-import { useStateValue } from './StateProvider';
+import db from '../../firebase';
+import firebase from '../../firebase';
+import { useStateValue } from '../../StateProvider';
 import './Chat.css';
 
 function Chat() {
