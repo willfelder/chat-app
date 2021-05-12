@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
 import './Login.css';
-import whatsappLogo from '../../image/whatsapplogo.png';
+import whatsappbackground from '../../image/backgroundwa.png';
 import { auth, provider } from '../../firebase';
 import { actionTypes } from '../../reducer';
 import { useStateValue } from '../../StateProvider';
@@ -23,21 +23,28 @@ function Login() {
     };
 
     return (
-        <div className="login">
 
-            <div className="login_container">
-                <img src={whatsappLogo} alt="Whatsapp Logo" />
+        <section className="login" alt="Whatsapp Background" style={{
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundImage: `url(${whatsappbackground})`
+
+        }}>
+
+            <div className="login_container">            
 
                 <div className="login_text">
-                    <h1>Sign in to Whatsapp</h1>
+                    <h1>Whatsapp Clone</h1>
+                    <p>This app was created only to study the technology React and it is not commercialized or monetized <br />All rights reserved for WhatsApp LLC © 2021</p>
                 </div>
 
                 <Button onClick={signIn}>
                     Sign in with Google
                 </Button>
-
             </div>
-        </div>
+
+        </section>
+
     )
 }
 
