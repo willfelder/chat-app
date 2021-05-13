@@ -7,11 +7,12 @@ import ChatIcon from '@material-ui/icons/Chat';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import MicIcon from '@material-ui/icons/Mic';
 import db from '../../firebase';
-import firebase from '../../firebase';
+import firebase from 'firebase';
 import { useStateValue } from '../../StateProvider';
 import './Chat.css';
 
 function Chat() {
+    
     const [seed, setSeed] = useState('');
     const [input, setInput] = useState('');
     const { roomId } = useParams();
@@ -20,6 +21,7 @@ function Chat() {
     const [{ user }, dispatch] = useStateValue();
 
     useEffect(() => {
+
         if (roomId) {
             db.collection('rooms')
               .doc(roomId)
@@ -37,10 +39,12 @@ function Chat() {
     }, [roomId])
 
     useEffect(() => {
+
         setSeed(Math.floor(Math.random() * 5000 ));
     }, [roomId]);
 
     const sendMessage = (e) => {
+        
         e.preventDefault();
         console.log('You typed >>', input);
 

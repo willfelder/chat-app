@@ -65,6 +65,7 @@
 .chat_timestamp {
     margin-left: 10px;
     font-size: xx-small;
+    color: gray;
 }
 
 .chat_footer {
@@ -83,6 +84,7 @@
 .chat_footer > form > input {
     flex: 1;
     border-radius: 30px;
+    outline: none;
     padding: 10px;
     border: none;
 }
