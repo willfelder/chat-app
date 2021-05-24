@@ -1,6 +1,6 @@
 {
   "homepage": "http://willfelder.github.io/chat-app",
-  "name": "react-deploy",
+  "name": "chat-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
