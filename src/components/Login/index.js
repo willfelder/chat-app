@@ -34,9 +34,9 @@ function Login() {
             <div className="login_container">            
 
                 <div className="login_text">
-                    <h1>Whatsapp Clone</h1>
+                    <h1>Whatsapp Web Clone</h1>
                     <p>This app is not commercialized or monetized. It was created only to study the technology React.
-                    <br /> All rights reserved for WhatsApp LLC © 2021</p>
+                    <br /><br /> All rights reserved for WhatsApp LLC © 2021</p>
                 </div>
 
                 <Button onClick={signIn}>
