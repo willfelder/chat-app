@@ -1,6 +1,6 @@
 ## WhatsApp Web Chat Clone
 
-<img src="https://logos-world.net/wp-content/uploads/2020/05/WhatsApp-Emblem.png" alt="WhatsApp logo" style="height: 150px; width:200px;"/>
+<img src="https://logos-world.net/wp-content/uploads/2020/05/WhatsApp-Emblem.png" alt="WhatsApp logo" style="height: 110px; width:200px;"/>
 
 ## Features
 - Functional components.
